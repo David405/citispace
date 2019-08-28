@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Red+Hat+Display&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/DPD_7998.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+#services {
+  position: relative;
+}
+
+#benefits {
+  position: relative;
+}
+
+.logo {
+  float: left;
+  font-size: 2vw;
+  padding: 0vh 20vw 0vh 2vw;
+  text-decoration: none;
+  color: white !important;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.menu {
+  font-size: 1.2vw;
+  padding: 0vh 2vw 0vh 2vw;
+  text-decoration: none;
+  color: white !important;
+  padding-left: 100px;
+  text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.hero-content {
+  color: white !important;
+  margin-top: 35vh;
+}
+
+.hero-title {
+  color: white !important;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.top-link {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: 0.25em;
+  width: 50px;
+  height: 50px;
+  background-color: #f8f8f8;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+svg {
+  fill: red;
+  width: 24px;
+  height: 12px;
+}
+
+.top-link:hover {
+  background-color: red;
+}
+svg:hover {
+  fill: white;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bolder;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.card-title {
+  height: 20px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.8rem;
+}
+
+.services {
+  margin-left: 200px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: red;
+  color: red;
+}
+
+.btn-secondary:hover {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+.benefit-content {
+  align-content: center;
+  margin-left: 250px;
+}
+
+.benefit-last {
+  align-content: center;
+  margin-left: 545px;
+}
+
+.b-card {
+  text-align: center;
+}
+
+.about-content {
+  width: 60%;
+  margin-left: 250px;
+}
+
+.footer {
+  height: 30vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.footer > p {
+  color: white;
+  padding: 25vh 20vw 0vh 40vw;
+}
+
+.check-in {
+  margin-left: 215px;
+}
+
+.btn-center {
+  align-content: center;
+  margin-right: 10px;
+}
